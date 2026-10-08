@@ -1,10 +1,13 @@
-# Student Management System
+# Student Practice Tracker
 
-A simple, responsive web application for managing and displaying student profiles. This project is designed to demonstrate basic full-stack or frontend concepts using modern web technologies.
+A simple, responsive web application built with React to manage and display student practice sessions. This project demonstrates core React concepts like props, state management (`useState`), side effects (`useEffect`), and conditional rendering.
 
 ## Features
-- **Student Profiles:** View individual student details including name, registration number, course, and other relevant information.
-- **Responsive UI:** A mobile-friendly and clean user interface.
+- **Student Profiles:** Displays student details (e.g., Name, Course, Year) passed down as props.
+- **Practice Tracking:** Includes a practice counter to track completed sessions, with "Complete Practice" and "Reset" functionality.
+- **Dynamic Title Updates:** Automatically updates the browser document title to reflect the current practice session count using `useEffect`.
+- **Profile Visibility Control:** Allows users to show or hide the student profile without losing the application layout (Header and Footer).
+- **Responsive UI:** A clean, mobile-friendly user interface.
 
 ## Technologies Used
 - **Frontend Framework:** React 19 (using Vite for fast development and building)

@@ -1,15 +1,43 @@
-function StudentProfile(props) {
+import { useEffect } from "react";
+
+function StudentProfile({ name, department, year, count, setCount }) {
+
+  useEffect(() => {
+    const previousTitle = document.title;
+
+    document.title = `Practice Sessions: ${count}`;
+
+    return () => {
+      document.title = previousTitle;
+    };
+  }, [count]);
+
   return (
     <div
       style={{
         border: "2px solid black",
-        padding: "15px",
-        marginBottom: "20px"
+        padding: "20px",
+        margin: "20px 0"
       }}
     >
-      <p>Name: {props.name}</p>
-      <p>Department: {props.department}</p>
-      <p>Year: {props.year}</p>
+      <h2>Student Profile</h2>
+
+      <p>Name: {name}</p>
+      <p>Department: {department}</p>
+      <p>Year: {year}</p>
+
+      <h3>Practice Count: {count}</h3>
+
+      <button onClick={() => setCount(count + 1)}>
+        Complete Practice
+      </button>
+
+      <button
+        onClick={() => setCount(0)}
+        style={{ marginLeft: "10px" }}
+      >
+        Reset
+      </button>
     </div>
   );
 }
