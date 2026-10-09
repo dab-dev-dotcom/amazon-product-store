@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer>
-      <p>&copy; 2026 Student Management System</p>
+    <footer className="footer">
+      <p>&copy; 2026 Amazon Product Store</p>
     </footer>
   );
 }

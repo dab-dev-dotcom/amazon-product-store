@@ -1,9 +1,7 @@
 function Header() {
   return (
-    <header>
-      <h1 style={{ color: "blue" }}>
-        Student Management System
-      </h1>
+    <header className="header">
+      <h1>Amazon Product Store</h1>
     </header>
   );
 }
